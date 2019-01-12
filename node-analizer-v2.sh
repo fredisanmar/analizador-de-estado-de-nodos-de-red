@@ -1,7 +1,7 @@
 #!/bin/bash
 apt-get install prips -y> /dev/null
 read -p '¿qué red quieres analizar?: ' network
-ip=`prips -e ...255 -e ...0 $network>/tmp/ip-range.txt`
+ip=`prips $network>/tmp/ip-range.txt`
 
 
 ##############################################################################
